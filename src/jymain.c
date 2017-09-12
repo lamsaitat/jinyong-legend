@@ -9,6 +9,10 @@
 
 #include "jymain.h"
 
+// Fix for 'error: array has incomplete element type 'const struct luaL_reg'
+// Ref:  http://www.voidcn.com/article/p-mjpcbfek-bgg.html
+#define luaL_reg luaL_Reg
+
 // 全程变量
 
 SDL_Surface* g_Surface=NULL;    // 游戏使用的视频表面
