@@ -7,6 +7,20 @@
                                  V0.66 测试版
 
 
+======================================================
+OSX installation with Brew:
+
+brew install sdl sdl_mixer sdl_ttf sdl_image smpeg lua lua@5.1 
+
+sudo ln -s /usr/local/Cellar/lua@5.1/5.1.5_4/include/lua5.1 /usr/include/lua5.1
+sudo ln -s /usr/local/Cellar/smpeg/0.4.5/include/smpeg/ /usr/include/smpeg
+
+cd src/
+make clean; make all
+cp jysdllua ../jysdllua
+======================================================
+
+
 2009-8-5  更新
 
 使用方法：
